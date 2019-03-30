@@ -17,14 +17,22 @@
 }
 
 % Title page
-\defbeamertemplate*{title page}{texsx}[1][]
+\defbeamertemplate*{title page}{opensuse}[1][]
 { 
-   \vskip0.5cm%
-   \hskip0.3cm\includegraphics[scale=0.15]{opensuse-logo}\vskip0.1cm%
-    \begin{beamercolorbox}[wd=12cm,leftskip=0cm,sep=8pt,#1]{title page header}
-    \usebeamerfont{title}\LARGE\inserttitle\par%
-    \vspace{0.5em}\small\insertsubtitle\par%
-    \end{beamercolorbox}%
+   \vskip0.5cm
+   \includegraphics[scale=0.15]{opensuse-logo}\vskip0.1cm
+    %\begin{beamercolorbox}[wd=12cm,leftskip=0cm,sep=8pt,#1]{title page header}
+    \usebeamerfont{title}{\LARGE\inserttitle}\par
+    \vspace{0.1em}{\small\insertsubtitle}\par
+    \vspace{1em}{\large\insertdate}\par
+    
+  
+    \begin{flushright}
+      {\large\insertauthor}\par
+      {\small\authortitle}\par
+      {\small\organization}
+    \end{flushright}
+    %\end{beamercolorbox}%
     %\vskip0.75cm%
     %\begin{beamercolorbox}[wd=12cm,leftskip=3cm,#1]{author}
     %  \usebeamerfont{author}\insertauthor%
