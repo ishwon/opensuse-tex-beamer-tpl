@@ -1,2 +1,3 @@
-# opensuse-tex-beamer-tpl
+# openSUSE TeX Beamer Template
+
 A LaTeX beamer template for openSUSE
